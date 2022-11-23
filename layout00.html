@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sc1,
+        .sc3,
+        .sc5 {
+            background: pink;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 20px;
+            margin: 0 0 30px 0;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        .nov {
+            display: flex;
+            /* nov의 box들을 가로로 배치하는 명령 */
+            gap: 30px;
+            /* box간의 간격을 30만큼 띄운다는 의미 */
+            width: 1200px;
+            margin: 0 auto;
+            /* 박스를 가운데 배치한다는 의미 */
+
+        }
+
+        .nov .box {
+            flex: 1;
+            background: #f9f9f9;
+            text-align: center;
+            padding: 10px 0;
+            margin: 10px 0;
+        }
+
+        .sc2>.nov>.box {
+            background: pink;
+        }
+
+        .sc4>.nov>.box {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sc1">
+        <h2>COLOR</h2>
+        <p>My fav colors</p>
+        <div class="nov">
+            <div class="box">white</div>
+            <div class="box">black</div>
+            <div class="box">pink</div>
+            <div class="box">skyblue</div>
+            <div class="box">warmgray</div>
+            <div class="box">coolgray</div>
+        </div>
+    </section>
+    <section class="sc2">
+        <h2>FOOD</h2>
+        <p>My fav foods</p>
+        <div class="nov">
+            <div class="box">떡볶이</div>
+            <div class="box">뿌링클</div>
+            <div class="box">고구마피자</div>
+            <div class="box">연어</div>
+            <div class="box">도너츠</div>
+        </div>
+    </section>
+    <section class="sc3">
+        <h2>Fruit</h2>
+        <p>My fav fruits</p>
+        <div class="nov">
+            <div class="box">물복</div>
+            <div class="box">딸기</div>
+            <div class="box">애플망고</div>
+            <div class="box">귤</div>
+            <div class="box">수박</div>
+            <div class="box">샤인머스켓</div>
+            <div class="box">멜론</div>
+            <div class="box">체리</div>
+        </div>
+    </section>
+    <section class="sc4">
+        <h2>Fruit</h2>
+        <p>My fav fruits</p>
+        <div class="nov">
+            <div class="box">물복</div>
+            <div class="box">딸기</div>
+            <div class="box">애플망고</div>
+            <div class="box">귤</div>
+            <div class="box">수박</div>
+            <div class="box">샤인머스켓</div>
+            <div class="box">멜론</div>
+            <div class="box">체리</div>
+        </div>
+    </section>
+    <section class="sc5">
+        <h2>Fruit</h2>
+        <p>My fav fruits</p>
+        <div class="nov">
+            <div class="box">물복</div>
+            <div class="box">딸기</div>
+            <div class="box">애플망고</div>
+            <div class="box">귤</div>
+            <div class="box">수박</div>
+            <div class="box">샤인머스켓</div>
+            <div class="box">멜론</div>
+            <div class="box">체리</div>
+        </div>
+    </section>
+</body>
+
+</html>

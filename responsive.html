@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 01</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        .mopen {
+            display: none;
+        }
+
+        /* pc 버전 */
+        @media (max-width: 768px) {
+            .mopen {
+                position: fixed;
+                top: 30px;
+                right: 30px;
+
+                display: block;
+            }
+        }
+
+        /* 모바일 버전 */
+        section {
+            position: relative;
+            height: 100vh;
+            background: url(./img/qk.jpg) no-repeat fixed center center/cover;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            padding: 0 15px;
+        }
+
+        .center h2 {
+            font-size: 5vw;
+            margin: 0 0 10px 0;
+            color: #fff;
+
+        }
+
+        .center p {
+            font-size: 2vw;
+            color: #fff;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <button class="mopen">
+            <i class="xi-bars"></i>
+        </button>
+        <div class="container">
+
+        </div>
+        <div class="center">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus blanditiis deserunt distinctio,
+                alias accusantium debitis est rerum quam.</p>
+        </div>
+    </section>
+</body>
+
+</html>
